@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Upload</title>
+		<!-- 引用控制层插件样式 -->
+		<link rel="stylesheet" href="css/zyUpload.css" type="text/css">
+		
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<!-- 引用核心层插件 -->
+		<script type="text/javascript" src="js/zyFile.js"></script>
+		<!-- 引用控制层插件 -->
+		<script type="text/javascript" src="js/zyUpload.js"></script>
+		<!-- 引用初始化JS -->
+		<script type="text/javascript" src="js/demo.js"></script>
+	</head>
+	
+	<body>
+		<h1 style="text-align:center;"></h1>
+	    <div id="demo" class="demo"></div>   
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>apply to ：IE、FireFox、Chrome、Safari、Opera. IE8 and below are not supported。</p>
+</div>
+</body>
+</html>
+
+
+<?php 
+$mkdir_file_dir = mkdir('./img/'.$_POST['title'],0777); //获取到标题，在最终的目录下面建立一个文件夹用来存放分类指定的文件 
+$tmp_file_name = $_FILES['file']['tmp_name']; //得到上传后的临时文件 
+$file_name = $_FILES['file']['name']; //源文件 
+$file_dir = './img/'.$_POST['title'].'/'; //最终保存目录 
+if(is_dir($file_dir)) 
+{ 
+move_uploaded_file($tmp_file_name,$file_dir.$file_name); //移动文件到最终保存目录 
+$img_url = $file_dir.$file_name; 
+$link = mysql_connect("localhost","root",""); 
+mysql_select_db("fenye"); 
+mysql_query("set names utf8"); 
+$insert = "insert into upfiles(title,img_url) values ('{$_POST['title']}','{$img_url}') "; 
+mysql_query($insert); //把文件路径存放到数据库中 
+} 
+?> 
+
+
+
+

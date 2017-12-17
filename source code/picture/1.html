@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>在线相册管理</title>
+	</head>
+	<body>
+		<center>
+			<?php include("menu.php");
+			<h3>发布相册信息</h3>
+			<?
+				//执行图片上传处理
+				//1.导入函数库
+				require("functions.php");
+				
+				//2.执行图片上传
+				$path="./pics/"; //定义图片存储目录
+				$typelist=array("image/jpeg","image/pjpeg","image/gif","image/png");
+				$info=uploadFile($_FILES['pic'],$path,$typelist);
+				
+				
+				//3.判断上传是否成功，并获取图片名，等比缩放
+				if($info['status']){
+					$picname=$info['info']; //获取图片名
+					updateImage
+				}
+				
+				//4.获取其它图片信息
+				
+				//5.拼装图片信息
+				
+				//6.写入图片信息文件
+				
+				//7.显示成功信息
+			?>
+		</center>
