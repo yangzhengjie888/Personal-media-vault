@@ -1,5 +1,5 @@
 # Personal media vault
-Users can access the Group 42 TNT Media vault by typing mediavault.wicp.net in the browser on any device through both internal and external Internet. We Use one developer’s laptop as the server, so if user would like to experience the media vault, please contact me and I will let him start the service on his laptop.
+Users can access the Group 42 TNT Media vault by typing [mediavault.wicp.net](mediavault.wicp.net) in the browser on any device through both internal and external Internet. We Use one developer’s laptop as the server, so if user would like to experience the media vault, please contact me and I will let him start the service on his laptop.
 
 If you have any questions, please do not hesitate to contact me.
 My email address is: yzj19920206@qq.com
