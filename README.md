@@ -3,6 +3,9 @@ Users can access the Group 42 TNT Media vault by typing [mediavault.wicp.net](me
 
 If you have any questions, please do not hesitate to contact me.
 My email address is: yzj19920206@qq.com
+
+Any other problems you meet in media vault, you can contact our manager with the contact information in <B>‘About us’</B> page. Our manager will reply you as soon as possible.
+
 ## functions
 1)	Register
 2)	Login
@@ -47,8 +50,4 @@ My email address is: yzj19920206@qq.com
 <B>FAQ</B>: When users meet some problems when they are using media vault, they can high-possibly find the answers through FAQ. The most frequent Q & A are collected and integrated from user feedbacks.
 
 <B>Check capability</B>: Users can check the capability, which is shown on the top-right of user interface. 
-
-
-
-Any other problems you meet in media vault, you can contact our manager with the contact information in <B>‘About us’</B> page. Our manager will reply you as soon as possible.
 
